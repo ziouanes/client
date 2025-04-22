@@ -20,45 +20,7 @@ project-root/
 
 ---
 
-## 🌐 Deploying Express Backend on Glitch (Free)
 
-### ✅ Step 1: Prepare your backend
-- Move `server.js` and `package.json` from `api-server/` to a separate folder or directly into a GitHub repo
-- Make sure `package.json` has:
-
-```json
-"scripts": {
-  "start": "node server.js"
-}
-```
-
-### ✅ Step 2: Push to GitHub
-- Create a GitHub repo with only the `api-server` content
-- Push your backend code
-
-### ✅ Step 3: Import to Glitch
-1. Go to [https://glitch.com](https://glitch.com)
-2. Sign in and click **"New Project > Import from GitHub"**
-3. Paste your GitHub repo URL
-4. After it imports, it will auto-deploy
-
-### ✅ Step 4: Check API URL
-Your API will be available at:
-```
-https://your-project-name.glitch.me/api/tasks
-```
-
----
-
-## ⚙️ Backend Configuration (CORS)
-In your `server.js`, add:
-
-```js
-const cors = require('cors');
-app.use(cors()); // Or restrict to Netlify domain
-```
-
----
 
 ## 🌍 Deploying React Frontend on Netlify
 
