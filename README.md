@@ -118,5 +118,3 @@ const API_URL = process.env.REACT_APP_API_URL;
 ---
 
 ## 🎉 Done!
-You now have a fullstack app deployed using **free hosting tools**, perfect for student projects and portfolios.
-
