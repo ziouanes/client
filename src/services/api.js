@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'https://prism-topaz-muscari.glitch.me/api/tasks';
+const API_URL = process.env.REACT_APP_API_URL || 'https://prism-topaz-muscari.glitch.me/api';
 
 const apiClient = axios.create({
   baseURL: API_URL,
