@@ -36,3 +36,105 @@
     transform: rotate(360deg);
   }
 }
+
+.vintage-app {
+  background-color: #f4e4bc;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+}
+
+.university-logo {
+  width: 500px;
+  height: auto;
+  max-width: 90%;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.university-logo:hover {
+  transform: scale(1.02);
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.vintage-title {
+  color: #2c1810;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 0px #d4b483;
+  border-bottom: 3px double #2c1810;
+  padding-bottom: 1rem;
+}
+
+.vintage-card {
+  background-color: #fff9e6;
+  border: 2px solid #2c1810;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 4px 4px 0px #2c1810;
+  position: relative;
+}
+
+.vintage-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 48%, #d4b483 49%, #d4b483 51%, transparent 52%);
+  background-size: 10px 10px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+button {
+  background-color: #8b4513 !important;
+  border: 2px solid #2c1810 !important;
+  color: #fff9e6 !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  box-shadow: 2px 2px 0px #2c1810 !important;
+  transition: all 0.3s ease !important;
+}
+
+button:hover {
+  transform: translate(2px, 2px) !important;
+  box-shadow: none !important;
+}
+
+input {
+  background-color: #fff9e6 !important;
+  border: 2px solid #2c1810 !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  color: #2c1810 !important;
+}
+
+.vintage-card::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 1px dashed #8b4513;
+  pointer-events: none;
+  opacity: 0.3;
+}
